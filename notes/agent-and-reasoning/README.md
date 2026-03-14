@@ -10,6 +10,7 @@
 - [Reasoning, Planning, Search](reasoning-planning-search.md)
 - [Memory, Context Engineering, RAG](memory-context-engineering-rag.md)
 - [Evaluation, Verifier, Reward Model, Judge Model](evaluation-verifier-reward-model-judge-model.md)
+- [Agent Evaluator Design](agent-evaluator-design.md)
 - [Reasoning Model Training](reasoning-model-training.md)
 - [Math, Code, Agent Reasoning](math-code-agent-reasoning.md)
 
