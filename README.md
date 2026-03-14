@@ -21,7 +21,8 @@ If you are new to this repo, start with:
 
 1. [Topics Map](TOPICS.md)
 2. [Notes Index](notes/README.md)
-3. One of the reading paths below
+3. [Roadmap](ROADMAP.md)
+4. One of the reading paths below
 
 ## Quick Positioning
 
