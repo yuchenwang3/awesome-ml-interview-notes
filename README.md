@@ -22,7 +22,8 @@ If you are new to this repo, start with:
 1. [Topics Map](TOPICS.md)
 2. [Notes Index](notes/README.md)
 3. [Roadmap](ROADMAP.md)
-4. One of the reading paths below
+4. [Contributing Guide](CONTRIBUTING.md)
+5. One of the reading paths below
 
 ## Quick Positioning
 
@@ -133,6 +134,7 @@ The notes are especially biased toward:
 - The repo is intentionally compact and high-signal rather than exhaustive.
 - The Mini-SGLang walkthrough references the upstream `sgl-project/mini-sglang` repository rather than vendoring the source here.
 - Navigation pages are in English so the repo is easier to discover and browse.
+- New notes should follow [TEMPLATE.md](TEMPLATE.md) and the conventions in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Suggested Positioning
 
