@@ -1,75 +1,117 @@
 # Awesome ML Interview Notes
 
-Curated interview-focused notes on:
+Interview-focused notes for:
 
 - LLM systems
 - RL and post-training
-- Agents, reasoning, and tool use
-- inference and optimization
+- agent / reasoning / tool use
+- inference and serving optimization
 
-This repo is designed for fast review before ML / LLM / AI systems interviews.
+This repo is built for fast revision before ML, LLM, applied research, and AI systems interviews.
 
-## Why This Repo
+## What Makes This Useful
 
-Most interview prep notes are either:
+Most interview notes fail in one of two ways:
 
-- too shallow to be useful in real interviews
-- too long and unstructured to review quickly
+- they are too shallow to survive real technical interviews
+- they are too long and messy to review under time pressure
 
-This repo aims to sit in the middle:
+This repo is meant to sit in the middle:
 
-- concise enough to revise fast
-- deep enough to explain system design and modeling tradeoffs
+- compact enough to skim quickly
+- deep enough to explain system design, tradeoffs, and execution details
 
-## Structure
+The notes are especially biased toward:
 
-### `notes/core-llm`
+- LLM post-training
+- inference and serving systems
+- agents and reasoning
+- interview-ready explanations instead of textbook-style coverage
 
-- `speculative-decoding.md`
-- `llm-optimization-notes.md`
+## Who This Is For
 
-### `notes/rl`
+- students preparing for ML / LLM interviews
+- applied researchers preparing for systems or post-training interviews
+- engineers who want a compact map of modern LLM topics
 
-- `reinforcement-learning.md`
-- `sft-rlhf-dpo-rlaif.md`
+## Repository Map
 
-### `notes/agent-and-reasoning`
+### Core LLM
 
-- `tool-use.md`
-- `mcp-function-calling-agent-framework.md`
-- `agent-core-components.md`
-- `reasoning-planning-search.md`
-- `memory-context-engineering-rag.md`
-- `evaluation-verifier-reward-model-judge-model.md`
-- `reasoning-model-training.md`
-- `math-code-agent-reasoning.md`
+- [LLM Optimization Notes](notes/core-llm/llm-optimization-notes.md)
+  Memory, compute, inference, KV cache, quantization, parallelism, and serving optimizations.
+- [Speculative Decoding](notes/core-llm/speculative-decoding.md)
+  Intuition, math, acceptance-rejection logic, residual distribution, and interview framing.
 
-### `notes/systems`
+### RL and Post-Training
 
-- `mini-sglang-walkthrough.md`
+- [Reinforcement Learning](notes/rl/reinforcement-learning.md)
+  MDP, value/policy methods, TD vs MC, Q-learning, PPO, actor-critic, and RLHF connections.
+- [SFT, RLHF, DPO, RLAIF](notes/rl/sft-rlhf-dpo-rlaif.md)
+  A compact map of modern LLM post-training pipelines and their tradeoffs.
 
-## Recommended Reading Order
+### Agent and Reasoning
 
-If you are preparing for LLM systems / applied research interviews:
+- [Tool Use](notes/agent-and-reasoning/tool-use.md)
+  What tool use is, how it differs from function calling, and why it looks like sequential decision-making.
+- [MCP, Function Calling, Agent Framework](notes/agent-and-reasoning/mcp-function-calling-agent-framework.md)
+  A clean separation between protocol, action interface, and system orchestration.
+- [Agent Core Components](notes/agent-and-reasoning/agent-core-components.md)
+  Planning, memory, reflection, verifier, router, recovery, and long-horizon failure.
+- [Reasoning, Planning, Search](notes/agent-and-reasoning/reasoning-planning-search.md)
+  CoT, self-consistency, ToT, MCTS, reflection, and verifier-guided search.
+- [Memory, Context Engineering, RAG](notes/agent-and-reasoning/memory-context-engineering-rag.md)
+  How to separate long-term state, external retrieval, and context construction.
+- [Evaluation, Verifier, Reward Model, Judge Model](notes/agent-and-reasoning/evaluation-verifier-reward-model-judge-model.md)
+  A practical map of evaluation-time and training-time feedback components.
+- [Reasoning Model Training](notes/agent-and-reasoning/reasoning-model-training.md)
+  Process supervision, outcome supervision, PRM, ORM, best-of-N, and test-time scaling.
+- [Math, Code, Agent Reasoning](notes/agent-and-reasoning/math-code-agent-reasoning.md)
+  How verifier strength, reward shape, and task structure differ across these reasoning domains.
 
-1. `notes/core-llm/llm-optimization-notes.md`
-2. `notes/core-llm/speculative-decoding.md`
-3. `notes/rl/reinforcement-learning.md`
-4. `notes/rl/sft-rlhf-dpo-rlaif.md`
-5. `notes/agent-and-reasoning/tool-use.md`
-6. `notes/agent-and-reasoning/agent-core-components.md`
-7. `notes/agent-and-reasoning/reasoning-model-training.md`
-8. `notes/systems/mini-sglang-walkthrough.md`
+### Systems Walkthroughs
 
-## Notes
+- [Mini-SGLang Walkthrough](notes/systems/mini-sglang-walkthrough.md)
+  A detailed source walkthrough of Mini-SGLang from request lifecycle to scheduler, radix cache, paged KV, engine, and attention backend execution.
 
-- Most notes are written in Chinese because they are optimized for fast interview revision.
-- The Mini-SGLang walkthrough references the upstream `sgl-project/mini-sglang` repository rather than vendoring the source code here.
+## Recommended Reading Paths
 
-## Suggested Repo Name
+### Path 1: LLM Systems Interview
 
-If you want a public-facing name that is clear and searchable, use:
+1. [LLM Optimization Notes](notes/core-llm/llm-optimization-notes.md)
+2. [Speculative Decoding](notes/core-llm/speculative-decoding.md)
+3. [Tool Use](notes/agent-and-reasoning/tool-use.md)
+4. [Agent Core Components](notes/agent-and-reasoning/agent-core-components.md)
+5. [Mini-SGLang Walkthrough](notes/systems/mini-sglang-walkthrough.md)
 
-- `awesome-ml-interview-notes`
+### Path 2: LLM Post-Training Interview
 
-It is broad enough for ML interviews and still specific enough to be discoverable.
+1. [Reinforcement Learning](notes/rl/reinforcement-learning.md)
+2. [SFT, RLHF, DPO, RLAIF](notes/rl/sft-rlhf-dpo-rlaif.md)
+3. [Evaluation, Verifier, Reward Model, Judge Model](notes/agent-and-reasoning/evaluation-verifier-reward-model-judge-model.md)
+4. [Reasoning Model Training](notes/agent-and-reasoning/reasoning-model-training.md)
+
+### Path 3: Agent / Reasoning Interview
+
+1. [Tool Use](notes/agent-and-reasoning/tool-use.md)
+2. [MCP, Function Calling, Agent Framework](notes/agent-and-reasoning/mcp-function-calling-agent-framework.md)
+3. [Agent Core Components](notes/agent-and-reasoning/agent-core-components.md)
+4. [Reasoning, Planning, Search](notes/agent-and-reasoning/reasoning-planning-search.md)
+5. [Memory, Context Engineering, RAG](notes/agent-and-reasoning/memory-context-engineering-rag.md)
+6. [Math, Code, Agent Reasoning](notes/agent-and-reasoning/math-code-agent-reasoning.md)
+
+## Notes About The Notes
+
+- Most notes are written in Chinese because they were optimized for fast interview revision.
+- The repo is intentionally compact and high-signal rather than exhaustive.
+- The Mini-SGLang walkthrough references the upstream `sgl-project/mini-sglang` repository rather than vendoring the source here.
+
+## Suggested Positioning
+
+If someone lands on this repo, the intended impression is:
+
+- not a random notebook dump
+- not a generic ML summary
+- a compact, serious, interview-oriented LLM knowledge base
+
+If you find it useful, star the repo so I know which topics to expand next.
