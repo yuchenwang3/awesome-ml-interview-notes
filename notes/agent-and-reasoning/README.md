@@ -4,6 +4,7 @@
 
 - [Tool Use](tool-use.md)
 - [Tool Use and RL in Domain Agents](tool-use-rl-in-domain-agents.md)
+- [E-commerce Agent System Design](e-commerce-agent-system-design.md)
 - [MCP, Function Calling, Agent Framework](mcp-function-calling-agent-framework.md)
 - [Agent Core Components](agent-core-components.md)
 - [Reasoning, Planning, Search](reasoning-planning-search.md)
