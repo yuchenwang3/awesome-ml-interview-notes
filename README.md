@@ -9,6 +9,28 @@ Interview-focused notes for:
 
 This repo is built for fast revision before ML, LLM, applied research, and AI systems interviews.
 
+中文说明：
+
+- 这是一个面向 `ML / LLM / Agent / Systems Interview` 的复习仓库
+- 内容偏高频、偏系统、偏 post-training 和 serving
+- 目标不是百科全书，而是面试前能快速过一遍并讲清楚
+
+## Start Here
+
+If you are new to this repo, start with:
+
+1. [Topics Map](TOPICS.md)
+2. [Notes Index](notes/README.md)
+3. One of the reading paths below
+
+## Quick Positioning
+
+This repo is optimized for people who want:
+
+- compact but non-trivial interview notes
+- system-level understanding rather than only definitions
+- modern LLM topics instead of only classic ML coverage
+
 ## What Makes This Useful
 
 Most interview notes fail in one of two ways:
@@ -33,6 +55,11 @@ The notes are especially biased toward:
 - students preparing for ML / LLM interviews
 - applied researchers preparing for systems or post-training interviews
 - engineers who want a compact map of modern LLM topics
+
+## Language Note
+
+- Most long-form notes are written in Chinese for speed of revision.
+- The repository structure, titles, and navigation are kept English-friendly so the repo is still easy to browse publicly.
 
 ## Repository Map
 
@@ -102,9 +129,9 @@ The notes are especially biased toward:
 
 ## Notes About The Notes
 
-- Most notes are written in Chinese because they were optimized for fast interview revision.
 - The repo is intentionally compact and high-signal rather than exhaustive.
 - The Mini-SGLang walkthrough references the upstream `sgl-project/mini-sglang` repository rather than vendoring the source here.
+- Navigation pages are in English so the repo is easier to discover and browse.
 
 ## Suggested Positioning
 
